@@ -3,6 +3,13 @@ module.exports = {
         // require let or const instead of var
         'no-var': 'error',
 
+        // Force the use of multiple var statements per function
+        'one-var': ['error', 'never'],
+
+        // disallow use of chained assignment expressions
+        // https://eslint.org/docs/rules/no-multi-assign
+        'no-multi-assign': ['error'],
+
         // suggest using of const declaration for variables that are never modified after declared
         'prefer-const': ['error', {
             destructuring: 'any',

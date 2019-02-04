@@ -1,7 +1,5 @@
 # ESLint Config Package for shareable code style
 
-### Do not use this package yet
-
 This package provides Eleven's base JS .eslintrc as an extensible shared config.
 
 ## Usage

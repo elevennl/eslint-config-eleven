@@ -29,6 +29,9 @@ module.exports = {
             allowArrowFunctions: true
         }],
 
+        // Disallow use of unary operators, ++ and --
+        'no-plusplus': 'error',
+
         // Force the spacing on anonymous and named functions
         'space-before-function-paren': ['error', {
             'anonymous': 'never',
@@ -38,6 +41,9 @@ module.exports = {
 
         // Force a space before the start of curly braces in blocks
         'space-before-blocks': 'error',
+
+        // require spaces around operators
+        'space-infix-ops': 'error',
 
         // Disallow reassignment of Function parameters
         'no-param-reassign': 'error',
