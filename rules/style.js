@@ -71,23 +71,7 @@ module.exports = {
         'no-duplicate-imports': 'error',
 
         // Set the correct indentation based on the editorConfigs
-        'indent': ['error', 2, {
-            SwitchCase: 2,
-            VariableDeclarator: 2,
-            outerIIFEBody: 2,
-            FunctionDeclaration: {
-                parameters: 2,
-                body: 2
-            },
-            CallExpression: {
-                arguments: 2
-            },
-            ArrayExpression: 2,
-            ObjectExpression: 2,
-            ImportDeclaration: 2,
-            flatTernaryExpressions: false,
-            ignoreComments: false
-        }],
+        'indent': ['error', "tab"],
 
         // Disallow the used of space and tabs in the same project
         'no-mixed-spaces-and-tabs': ['error', 'smart-tabs']

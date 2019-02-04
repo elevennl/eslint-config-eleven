@@ -1,12 +1,12 @@
 {
-    "name": "eslint-config-eleven",
-    "version": "0.1.0",
+    "name": "@elevennl/eslint-config-eleven",
+    "version": "0.9.0",
     "description": "ESLint shareable config for the Eleven Code Style",
     "main": "index.js",
     "author": "Eleven",
     "license": "MIT",
     "scripts": {
-        "prepublish": "(in-install || eslint-find-rules --unused) && safe-publish-latest"
+        "publish": "yarn publish --access public"
     },
     "engines": {
         "node": ">=4"
@@ -21,5 +21,22 @@
     "peerDependencies": {
         "eslint": ">=5.6.0",
         "eslint-plugin-import": "~2.14.0"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/elevennl/eslint-config-eleven.git"
+    },
+    "keywords": [
+        "eslint",
+        "code",
+        "style",
+        "code",
+        "linter",
+        "quality",
+        "policy"
+    ],
+    "bugs": {
+        "url": "https://github.com/elevennl/eslint-config-eleven/issues"
+    },
+    "homepage": "https://github.com/elevennl/eslint-config-eleven#readme"
 }
