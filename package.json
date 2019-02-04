@@ -1,12 +1,12 @@
 {
     "name": "@elevennl/eslint-config-eleven",
-    "version": "0.9.0",
+    "version": "1.0.0",
     "description": "ESLint shareable config for the Eleven Code Style",
     "main": "index.js",
     "author": "Eleven",
     "license": "MIT",
     "scripts": {
-        "publish": "yarn publish --access public"
+        "prepublish": "(in-install || eslint-find-rules --unused) && safe-publish-latest"
     },
     "engines": {
         "node": ">=4"
