@@ -71,9 +71,48 @@ module.exports = {
         'no-duplicate-imports': 'error',
 
         // Set the correct indentation based on the editorConfigs
-        'indent': ['error', "tab"],
+        'indent': ['error', 'tab'],
 
         // Disallow the used of space and tabs in the same project
-        'no-mixed-spaces-and-tabs': ['error', 'smart-tabs']
+        'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+
+        // Enforces line break usage after opening and before closing array brackets
+        'array-bracket-newline': ['error', 'consistent'],
+
+        // Enforces the use of spaces inside brackets of arrays
+        'array-bracket-spacing': ['error', 'always', {'arraysInArrays': false}],
+
+        // Comma styles for comma seperated lists
+        'comma-style': ['error', 'last'],
+
+        // Enforces consistent line-breaks in parameters in functions
+        'function-paren-newline': ['error', 'multiline'],
+
+        // Enforces consistent line-breaks in arrays
+        'array-element-newline': ['error', 'consistent'],
+
+        // Enforces consistent spacing inside blocks
+        'block-spacing': 'error',
+
+        // Do not notify of a missing super call in constructors
+        'constructor-super': 'off',
+
+        // Enforce the position of line comments in code for readability
+        'line-comment-position': ['error', 'above'],
+
+        // The one true brace style
+        'brace-style': ['error', '1tbs'],
+
+        // This might seem unnecessary but can be very helpful in terms of readability
+        'capitalized-comments': 'error',
+
+        // Enforces correct spacing before or after commas
+        'comma-spacing': ['error', {
+            'before': false,
+            'after': true
+        }],
+
+        // A good practice and most editors already enforce this
+        'eol-last': ['error', 'always']
     }
 };

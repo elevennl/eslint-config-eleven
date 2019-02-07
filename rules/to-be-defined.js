@@ -1,27 +1,21 @@
 module.exports = {
     rules: {
-        'brace-style': 'off',
+        // Currently we don't enforce any callback returns or any callback naming conventions
+        // https://eslint.org/docs/rules/callback-return
         'callback-return': 'off',
+
+        // Currently we don't enforce camelCasing.
+        // While it is considered a best practice in some frameworks
         'camelcase': 'off',
-        'capitalized-comments': 'off',
-        'comma-dangle': 'off',
-        'comma-spacing': 'off',
+
+        // No enforcement of property spacing. This should be handled by the dev to make sure
+        // code is always readable
         'computed-property-spacing': 'off',
+
+        // We do not enforce a consistent this rule
         'consistent-this': 'off',
-        'eol-last': 'off',
-        'for-direction': 'off',
-        'func-call-spacing': 'off',
-        'func-name-matching': 'off',
-        'func-names': 'off',
-        'generator-star-spacing': 'off',
-        'getter-return': 'off',
-        'global-require': 'off',
-        'id-blacklist': 'off',
-        'id-length': 'off',
-        'id-match': 'off',
-        'implicit-arrow-linebreak': 'off',
-        'init-declarations': 'off',
-        'jsx-quotes': 'off',
-        'key-spacing': 'off'
+
+        // No redundant catch blocks
+        'no-useless-catch': 'off'
     }
 };

@@ -3,6 +3,7 @@ module.exports = {
         './rules/best-practices',
         './rules/style',
         './rules/variables',
+        './rules/to-be-defined'
     ].map(require.resolve),
     parserOptions: {
         ecmaVersion: 2018,

@@ -103,8 +103,6 @@ module.exports = {
         // disallow reassignments of native objects or read-only globals
         // https://eslint.org/docs/rules/no-global-assign
         'no-global-assign': ['error', { exceptions: [] }],
-        // deprecated in favor of no-global-assign
-        'no-native-reassign': 'off',
 
         // disallow implicit type conversions
         // https://eslint.org/docs/rules/no-implicit-coercion
@@ -167,7 +165,22 @@ module.exports = {
         // disallow usage of configurable warning terms in comments:
         'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
 
-        // Yoda conditions
-        'yoda': 'error'
+        // We are not Star Wars nor Yoda. Make sure to always compare something the logical way.
+        'yoda': 'error',
+
+        // Check if a callback error handler is defined. While this is good practice we do not enforce it as of now.
+        'handle-callback-err': 'off',
+
+        // Enforce a maximum amount of parameters in function.
+        'max-params': ['error', 5],
+
+        // This will make code diffs much more readable.
+        'comma-dangle': 'error',
+
+        // Enforce a correct use of for loops.
+        'for-direction': 'error',
+
+        // Make sure to correctly check using isNan instead of NaN itself
+        'use-isnan': 'error'
     }
 };
