@@ -1,20 +1,20 @@
 {
     "name": "@elevennl/eslint-config-eleven",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "ESLint shareable config for the Eleven Code Style",
     "main": "index.js",
     "author": "Eleven",
     "license": "MIT",
     "scripts": {
-        "prepublish": "(in-install || eslint-find-rules --unused) && safe-publish-latest"
+        "prepublishOnly:": "(in-publish || eslint-find-rules -u --no-core) && safe-publish-latest"
     },
     "engines": {
         "node": ">=4"
     },
     "devDependencies": {
-        "eslint": "~5.6.0",
+        "eslint": "~5.13.0",
         "eslint-find-rules": "~3.3.1",
-        "eslint-plugin-import": "~2.14.0",
+        "eslint-plugin-import": "~2.16.0",
         "in-publish": "~2.0.0",
         "safe-publish-latest": "~1.1.2"
     },
