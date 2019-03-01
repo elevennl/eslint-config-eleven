@@ -70,7 +70,7 @@ module.exports = {
         // Disallow duplicate imports
         'no-duplicate-imports': 'error',
 
-        // Set the correct indentation based on the editorConfigs
+        // Set the correct indentation
         'indent': ['error', 'tab'],
 
         // Disallow the used of space and tabs in the same project
