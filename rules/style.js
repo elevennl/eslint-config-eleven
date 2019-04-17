@@ -80,7 +80,10 @@ module.exports = {
         'array-bracket-newline': ['error', 'consistent'],
 
         // Enforces the use of spaces inside brackets of arrays
-        'array-bracket-spacing': ['error', 'always', {'arraysInArrays': false}],
+        'array-bracket-spacing': ['error', 'never', {
+            'arraysInArrays': false,
+            'objectsInArrays': false
+        }],
 
         // Comma styles for comma seperated lists
         'comma-style': ['error', 'last'],

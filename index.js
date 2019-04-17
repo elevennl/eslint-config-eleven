@@ -12,4 +12,12 @@ module.exports = {
     rules: {
         strict: 'error',
     },
+    overrides: [
+        {
+            files: ['*.vue'],
+            rules: {
+                'indent': ['off']
+            }
+        }
+    ]
 };
