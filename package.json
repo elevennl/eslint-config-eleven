@@ -1,6 +1,6 @@
 {
     "name": "@elevennl/eslint-config-eleven",
-    "version": "1.3.6",
+    "version": "1.3.7",
     "description": "ESLint shareable config for the Eleven Code Style",
     "main": "index.js",
     "author": "Eleven",

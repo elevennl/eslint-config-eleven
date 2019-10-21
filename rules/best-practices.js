@@ -5,7 +5,7 @@ module.exports = {
 
         // enforces return statements in callbacks of array's methods
         // https://eslint.org/docs/rules/array-callback-return
-        'array-callback-return': ['error', { allowImplicit: true }],
+        'array-callback-return': ['error', {allowImplicit: true}],
 
         // treat var statements as if they were block scoped
         'block-scoped-var': 'error',
@@ -26,10 +26,10 @@ module.exports = {
         'curly': ['error', 'multi-line'],
 
         // require default case in switch statements
-        'default-case': ['error', { commentPattern: '^no default$' }],
+        'default-case': ['error', {commentPattern: '^no default$'}],
 
         // encourages use of dot notation whenever possible
-        'dot-notation': ['error', { allowKeywords: true }],
+        'dot-notation': ['error', {allowKeywords: true}],
 
         // enforces consistent newlines before or after dots
         // https://eslint.org/docs/rules/dot-location
@@ -37,7 +37,7 @@ module.exports = {
 
         // require the use of === and !==
         // https://eslint.org/docs/rules/eqeqeq
-        'eqeqeq': ['error', 'always', { null: 'ignore' }],
+        'eqeqeq': ['error', 'always', {null: 'ignore'}],
 
         // make sure for-in loops have an if statement
         'guard-for-in': 'error',
@@ -60,9 +60,12 @@ module.exports = {
         // https://eslint.org/docs/rules/no-div-regex
         'no-div-regex': 'off',
 
+        // usually bitwise operators are typo's
+        'no-bitwise': 'error',
+
         // disallow else after a return in an if
         // https://eslint.org/docs/rules/no-else-return
-        'no-else-return': ['error', { allowElseIf: false }],
+        'no-else-return': ['error', {allowElseIf: false}],
 
         // disallow empty functions, except for standalone funcs/arrows
         // https://eslint.org/docs/rules/no-empty-function
@@ -102,7 +105,7 @@ module.exports = {
 
         // disallow reassignments of native objects or read-only globals
         // https://eslint.org/docs/rules/no-global-assign
-        'no-global-assign': ['error', { exceptions: [] }],
+        'no-global-assign': ['error', {exceptions: []}],
 
         // disallow implicit type conversions
         // https://eslint.org/docs/rules/no-implicit-coercion
@@ -127,7 +130,7 @@ module.exports = {
         'no-iterator': 'error',
 
         // disallow use of labels for anything other then loops and switches
-        'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
+        'no-labels': ['error', {allowLoop: false, allowSwitch: false}],
 
         // disallow unnecessary nested blocks
         'no-lone-blocks': 'error',
@@ -163,7 +166,7 @@ module.exports = {
         'no-useless-escape': 'error',
 
         // disallow usage of configurable warning terms in comments:
-        'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+        'no-warning-comments': ['off', {terms: ['todo', 'fixme', 'xxx'], location: 'start'}],
 
         // We are not Star Wars nor Yoda. Make sure to always compare something the logical way.
         'yoda': 'error',
