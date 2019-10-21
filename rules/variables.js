@@ -3,6 +3,12 @@ module.exports = {
         // require let or const instead of var
         'no-var': 'error',
 
+        // Enables console commands only in development environments
+        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+
+        // Enables debugger commands only in development environments
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+
         // Force the use of multiple var statements per function
         'one-var': ['error', 'never'],
 
@@ -17,10 +23,10 @@ module.exports = {
         }],
 
         // disallow declaration of variables that are not used in the code
-        'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+        'no-unused-vars': ['error', {vars: 'all', args: 'after-used', ignoreRestSiblings: true}],
 
         // disallow use of variables before they are defined
-        'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
+        'no-use-before-define': ['error', {functions: true, classes: true, variables: true}],
 
         // disallow deletion of variables
         'no-delete-var': 'error',

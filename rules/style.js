@@ -106,11 +106,10 @@ module.exports = {
         // The one true brace style
         'brace-style': ['error', '1tbs'],
 
-        // This might seem unnecessary but can be very helpful in terms of readability
-        'capitalized-comments': ['error', 'always', {
-            'ignoreInlineComments': true,
-            'ignoreConsecutiveComments': true
-        }],
+        // This might seem unnecessary but can be very helpful in terms of readability.
+        // Yet we don't enforce this and expect the developer to maintain a readable
+        // format for using comments.
+        'capitalized-comments': 'off',
 
         // Enforces correct spacing before or after commas
         'comma-spacing': ['error', {
