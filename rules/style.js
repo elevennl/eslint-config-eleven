@@ -60,7 +60,7 @@ module.exports = {
         }],
 
         // Allows the removal of braces when a single statement is used
-        'arrow-body-style': ['error', 'as-needed'],
+        'arrow-body-style': ['warn', 'as-needed'],
 
         // Disallow arrow functions where they could be confused with comparisons
         'no-confusing-arrow': ['error', {
@@ -118,6 +118,9 @@ module.exports = {
         }],
 
         // A good practice and most editors already enforce this
-        'eol-last': ['error', 'always']
+        'eol-last': ['error', 'always'],
+
+        // Allow a maximum depth for nested code in a block
+        'max-depth': ['warn', 4],
     }
 };
