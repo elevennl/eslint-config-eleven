@@ -12,10 +12,10 @@
         "node": ">=9"
     },
     "devDependencies": {
-        "eslint": "~6.2.2",
-        "eslint-plugin-import": "~2.18.2",
-        "in-publish": "~2.0.0",
-        "safe-publish-latest": "~1.1.3"
+        "eslint": "~7.11.0",
+        "eslint-plugin-import": "~2.22.1",
+        "in-publish": "~2.0.1",
+        "safe-publish-latest": "~1.1.4"
     },
     "repository": {
         "type": "git",
