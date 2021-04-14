@@ -6,7 +6,7 @@
     "author": "Eleven",
     "license": "MIT",
     "scripts": {
-        "prepublishOnly:": "(in-publish || eslint-find-rules -u --no-core) && safe-publish-latest"
+        "prepublishOnly:": "(in-publish || eslint-find-rules -u --no-core)"
     },
     "engines": {
         "node": ">=9"
@@ -14,8 +14,7 @@
     "devDependencies": {
         "eslint": "~7.11.0",
         "eslint-plugin-import": "~2.22.1",
-        "in-publish": "~2.0.1",
-        "safe-publish-latest": "~1.1.4"
+        "in-publish": "~2.0.1"
     },
     "repository": {
         "type": "git",

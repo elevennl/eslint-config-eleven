@@ -7,6 +7,12 @@ This package provides Eleven's base JS .eslintrc as an extensible shared config.
 Use yarn to install this package
 
 ```bash
+npm install --save @elevennl/eslint-config-eleven
+```
+
+or
+
+```bash
 yarn add @elevennl/eslint-config-eleven
 ```
 
